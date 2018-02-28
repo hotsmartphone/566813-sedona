@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Виктор Каргалов](https://up.htmlacademy.ru/htmlcss/20/user/566813).
-* Наставник: [Дмитрий Мишагин] (https://up.htmlacademy.ru/htmlcss/20/user/118967).
+* Наставник: [Дмитрий Мишагин](https://up.htmlacademy.ru/htmlcss/20/user/118967).
 
 ---
 
