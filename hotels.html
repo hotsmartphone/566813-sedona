@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+<header class="main-header">
+  <a href="index.html"><img src="#" alt="City of Sedona"></a>
+  <nav class="main-navigator">
+    <ul class="site-navigation">
+      <li><a href="info.html">Информация</a></li>
+      <li><a href="madia.html">Фото и видео</a></li>
+      <li><a href="map.html">Карта штата</a></li>
+      <li><a href="hotels.html">Гостиницы</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="container">
+  <section>
+    <form>
+      <div class="infrastructure">
+        <b>Инфраструктура:</b>
+        <input type="checkbox" value="Бассейн" id="pool" checked>
+        <label for="pool">Бассейн</label>
+        <input type="checkbox" value="Парковка" id="parking-place">
+        <label for="parking-place">Парковка</label>
+        <input type="checkbox" value="Wi-fi" id="wi-fi">
+        <label for="wi-fi">Wi-fi</label>
+      </div>
+      <div class="type-of-hotel">
+        <b>Тип жилья:</b>
+        <input type="checkbox" value="Гостиница" id="hotel" checked>
+        <label for="hotel">Гостиница</label>
+        <input type="checkbox" value="Мотель" id="motel" checked>
+        <label for="motel">Мотель</label>
+        <input type="checkbox" value="Аппартаменты" id="apartments" checked>
+        <label for="apartments">Аппартаменты</label>
+      </div>
+      <div>
+        <b>Стоимость в сутки (Р):</b>
+        <div>
+          <span>от</span>
+          <input type="number" value="0">
+        </div>
+        <div>
+        <span>до</span>
+        <input type="number" value=3000>
+        </div>
+      </div>
+      <div>
+        <input type="range" min="0" max="4000" step="1">
+      </div>
+      <div class="buttons">
+        <input type="submit" value="Показать">
+      </div>
+    </form>
+  </section>
+  <section>
+    <b>Найдено:3</b>
+    <span>Сортировка:</span>
+    <ul>
+      <li>По цене</li>
+      <li>По типу</li>
+      <li>По рейтингу</li>
+    </ul>
+    <div>
+      <a class="button-sorting-up" href="#">По возрастанию</a>
+      <a class="button-sorting-down" href="#">По убыванию</a>
+    </div>
+  </section>
+<section>
+<article>
+  <img src="#" alt="Фотография Amara Resort & SPA">
+  <h2 class="name-of-hotel">Amara Resort & SPA</h2>
+  <div>
+    <span class="type-of-hotel">Гостница</span>
+    <p>
+      <span>от 4000 р.</span>
+    </p>
+  </div>
+  <a class="button-info" href="more-info">Подробнее</a>
+  <a class="button-booking" href="booking">Забронировать</a>
+  <div>
+    <span>Класс: 4*</span>
+  </div>
+  <span>Рейтинг: 8,5</span>
+</article>
+<article>
+  <img src="#" alt="Фотография Desert Quail Inn">
+  <h2 class="name-of-hotel">Desert Quail Inn</h2>
+  <div>
+    <span class="type-of-hotel">Мотель</span>
+    <p>
+      <span>от 3000 р.</span>
+    </p>
+  </div>
+  <a class="button-info" href="more-info">Подробнее</a>
+  <a class="button-booking" href="booking">Забронировать</a>
+  <div>
+    <span>Класс: 3*</span>
+  </div>
+  <span>Рейтинг: 8,9</span>
+</article>
+<article>
+  <img src="#" alt="Фотография Villas at Poco Diablo">
+  <h2 class="name-of-hotel">Villas at Poco Diablo</h2>
+  <div>
+    <span class="type-of-hotel">Аппартаменты</span>
+    <p>
+      <span>от 2000 р.</span>
+    </p>
+  </div>
+  <a class="button-info" href="more-info">Подробнее</a>
+  <a class="button-booking" href="booking">Забронировать</a>
+  <div>
+    <span>Класс: 2*</span>
+  </div>
+  <span>Рейтинг: 9,2</span>
+</article>
+</section>
+  </main>
+<footer class="main-footer">
+  <b class="footer-hashtag">#visitsedona</b>
+  <div class="footer-social">
+    <ul>
+      <li><a class="social-button" href="#">Twitter</a></li>
+      <li><a class="social-button" href="#">Facebook</a></li>
+      <li><a class="social-button" href="#">Youtube</a></li>
+    </ul>
+  </div>
+  <div class="footer-copyright">
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+        <span>Website by</span>
+        <img src="#" width="0" height="0" alt="HTML Academy">
+    </a>
+  </div>
+</footer>
+  </body>
+</html>
