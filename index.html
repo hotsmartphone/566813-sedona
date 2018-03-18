@@ -2,14 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
 <!--
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
 -->
-    <header class="main-header">
-      <a href="#"><img src="#" alt="City of Sedona"></a>
+    <header class="main-section main-header">
+      <img class="index-logo"src="img/index-logo.png" width="138" height="70" alt="City of Sedona">
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
@@ -19,34 +22,44 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main class="main-section main-content">
+      <section class="index-banner">
+        <div class="banner-wrapper">
+          <img src="img/banner-welcome.png" width="458" height="352" alt="Добро пожаловать в Седону">
+        </div>
+        <div class="banner-mask"></div>
+      </section>
+<!--
       <section class="welcome-image">
         <h1>Восхитительные виды Седоны!</h1>
         <div class="basic-image"></div>
         <div class="slogan"></div>
         <div class="decorative-item"></div>
       </section>
+    -->
       <section class="features">
-        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <b>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</b>
+        <h1>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul class="feature-list">
           <li class="feature-item illustrated">
-            <img class="feature-image" src="#" width="0" height="0" alt="Фотография городского здания">
-            <h3>Настоящий городок</h3>
-            <span>№1</span>
-            <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
-            <ul>
-              <li class="feature-item sub-feature">
+            <img class="feature-image" src="img/feature-1.jpg" width="800px" height="256px" alt="Фотография городского здания">
+            <div class="feature-item-title">
+              <h3>Настоящий городок</h3>
+              <span>№1</span>
+              <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <ul class="sub-feature-list">
+              <li class="feature-item sub-feature feature-housing">
                 <div class="sub-feature-image"></div>
                 <h4>Жилье</h4>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="feature-item sub-feature">
+              <li class="feature-item sub-feature feature-food">
                 <div class="sub-feature-image"></div>
                 <h4>Еда</h4>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="feature-item sub-feature">
+              <li class="feature-item sub-feature feature-souvenirs">
                 <div class="sub-feature-image"></div>
                 <h4>Сувениры</h4>
                 <p>Не только китайского, но и местного производства!</p>
@@ -54,10 +67,12 @@
             </ul>
           </li>
           <li class="feature-item illustrated">
-            <img class="feature-image" src="#" width="0" height="0" alt="Фотография Моста Дьявола">
-            <h3>Там есть Мост Дьявола</h3>
-            <span>№2</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <img class="feature-image" src="img/feature-2.jpg" width="800px" height="256px" alt="Фотография Моста Дьявола">
+            <div class="feature-item-title">
+              <h3>Там есть  Мост Дьявола</h3>
+              <span>№2</span>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
           </li>
           <li class="feature-item">
             <h3>Небольшая площадь</h3>
@@ -92,7 +107,7 @@
       </section>
       <img src="#" width="0" height="0" alt="Расположение Седоны на карте">
     </main>
-    <footer class="main-footer">
+    <footer class="main-section main-footer">
       <b class="footer-hashtag">#visitsedona</b>
       <div class="footer-social">
         <ul>
