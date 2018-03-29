@@ -35,8 +35,8 @@
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           <ul class="feature-list">
             <li class="feature-item illustrated">
-              <img class="feature-image" src="img/feature-1.jpg" width="800px" height="256px" alt="Фотография городского здания">
-              <div class="feature-item-title">
+              <img class="feature-image" src="img/feature-1.jpg" width="800" height="256" alt="Фотография городского здания">
+              <div class="feature-item-title title-illustrated">
                 <h3>Настоящий городок</h3>
                 <span>№1</span>
                 <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
@@ -61,23 +61,23 @@
             </li>
             <li class="feature-item illustrated">
               <img class="feature-image" src="img/feature-2.jpg" width="800px" height="256px" alt="Фотография Моста Дьявола">
-              <div class="feature-item-title">
+              <div class="feature-item-title title-illustrated">
                 <h3>Там есть  Мост Дьявола</h3>
                 <span>№2</span>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
             </li>
-            <li class="feature-item">
+            <li class="feature-item feature-item-title">
               <h3>Небольшая площадь</h3>
               <span>№3</span>
               <p>Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="feature-item">
+            <li class="feature-item feature-item-title">
               <h3>Красивая дорога</h3>
               <span>№4</span>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="feature-item">
+            <li class="feature-item feature-item-title">
               <h3>Мало туристов</h3>
               <span>№5</span>
               <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -89,27 +89,45 @@
           <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
           <button class="button-search" name="Поиск гостиницы в Седоне" type="button"  form="search-hotel">Поиск гостиницы в Седоне</button>
           <form class="search-hotels-form" action="https://echo.htmlacademy.ru" method="get" id="search-hotel" name="Поиск гостиницы в Седоне">
-            <div class="search-item item-date">
-              <label for="arrival-date">Дата заезда:</label>
-              <input id="arrival-date" type="date" value="2017-04-24" required>
-              <button class="visually-hidden" type="button">Календарь</button>
-            </div>
-            <div class="search-item item-date">
-              <label for="date-of-departure">Дата выезда:</label>
-              <input id="date-of-departure" type="date" value="2017-07-04" required>
-              <button class="visually-hidden" type="button">Календарь</button>
-            </div>
-            <div class="search-item">
-              <div class="item-number">
-                <label for="adult">Взрослые:</label>
-                <input id="adult" type="number" min="1" step="1" value="2" required>
+            <fieldset class="frame-content">
+              <div class="search-item item-date">
+                <label for="arrival-date">Дата заезда:</label>
+                <input id="arrival-date" type="text" value="24 апреля 2017" placeholder="Укажите дату заезда" required>
+                <button class="calendar" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                    <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                  </svg>
+                </button>
               </div>
-              <div class="item-number">
-                <label for="children">Дети:</label>
-                <input id="children" type="number" min="0" step="1" value="0">
+              <div class="search-item item-date">
+                <label for="date-of-departure">Дата выезда:</label>
+                <input id="date-of-departure" type="text" value="4 июля 2017" placeholder="Укажите дату выезда" required>
+                <button class="calendar" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                    <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                  </svg>
+                </button>
               </div>
-          </div>
-            <button class="button" type="submit">Найти</button>
+              <div class="search-item">
+                <div class="item-number">
+                  <label for="adult">Взрослые:</label>
+                  <div class="about-number adult-number">
+                    <button class="minus-button" type="button">minus</button>
+                    <input id="adult" type="text" value="2" placeholder="1" required>
+                    <button class="plus-button" type="button">plus</button>
+                  </div>
+                </div>
+                <div class="item-number">
+                  <label for="children">Дети:</label>
+                  <div class="about-number children-number">
+                    <button class="minus-button" type="button">minus</button>
+                    <input id="children"  type="text" value="0" placeholder="0">
+                    <button class="plus-button" type="button">plus</button>
+                  </div>
+                </div>
+              </div>
+              <button class="button" type="submit">Найти</button>
+            </fieldset>
           </form>
         </section>
         <img src="img/index-map.jpg" width="inherit" height="473px" alt="Расположение Седоны на карте">
